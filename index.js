@@ -144,7 +144,7 @@ bot.on("message", (msg) => {
 - адрес 
             `
           );
-      bot.on("message", msg.chat.id);
+      bot.on("message", listener.chat.id);
       bot.sendMessage(msg.chat.id, "Отлично. Выберете категорию", categoriesKeyboard);
       break;
     }
