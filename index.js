@@ -135,17 +135,7 @@ bot.on("callback_query", (msg) => {
 bot.on("message", (msg) => {
   switch (msg.text.toString()) {
     case buttons.button1: {
-      bot.sendMessage(
-            msg.from.id,
-            `
-Укажите ваши контакты.
-- телеграм
-- номер телефона
-- адрес 
-            `
-          );
-      bot.on("message", listener.chat.id) =>
-      bot.sendMessage(msg.chat.id, "Отлично. Выберете категорию", categoriesKeyboard);
+      bot.sendMessage(msg.chat.id, "Выберете категорию:", categoriesKeyboard);
       break;
     }
     case buttons.button2: {
