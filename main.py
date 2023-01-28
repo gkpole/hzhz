@@ -33,7 +33,6 @@ try:
         if func.get_adr(id) == None:
             print(f'new /start user:{id}')
             bot.send_message(settings.my_id,f'new /start user:{id}')
-            bot.send_sticker(id, data='CAACAgIAAxkBAAECPO5giGoNsoJBjRtcH7_aJhVClWpcFQACPAIAAsSraAsjklggV2Agrh8E')
             bot.send_message(id,'Привет! Так как ты у нас новенький, для работы нужно установить адрес ⬇️ (кнопочка внизу)! Потом нажми /start, чтобы начать закупаться)', reply_markup=kb.input_adress)
         else:
             id = message.from_user.id
