@@ -37,7 +37,6 @@ try:
         else:
             id = message.from_user.id
             nick = message.from_user.first_name
-            bot.send_sticker(id, data='CAACAgIAAxkBAAECNdBggCBUzcsxxtwc6GG1WDfcrumy9wAC8QEAAsSraAu8b-IOs4_GrB8E')
             bot.send_message(id,f'Привет, {nick}!\nВремя раскумариться, выбирай внизу девайсы под продажу в своем городе (от 8 шт заказ) и заказывай)\n➖➖➖➖➖➖➖➖➖➖➖\n ☑️ <strong>Актуальный каталог</strong> ☑️\n➖➖➖➖➖➖➖➖➖➖➖\nPuff XXL -{settings.puff_xxl_1600_cost}р\nPosh XL -{settings.posh_xl_1500_cost}р\nAlpha Onee Plus -{settings.alpha_onee_plus_2200_cost}р\nBang Switch Duo -{settings.bang_switch_duo_2000_cost}р\nHQD Cuvie Plus -{settings.hqd_cuvie_plus_1200_cost}р\nBANG XXL -{settings.bang_xxl_2000_cost}р\nHQD Maxim -{settings.hqd_maxim_400_cost}р\nMaskking Pro -{settings.maskking_1000_cost}р',reply_markup=kb.main, parse_mode='HTML')
             if func.info_user(id) == 'new':
                 func.first_join(id)
